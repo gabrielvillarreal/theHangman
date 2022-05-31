@@ -30,6 +30,7 @@
 }
 
 #nuevaPartida{   
+    font-family:Arial, Helvetica, sans-serif; 
     margin-top: 5%;
     left:40%;
     width:110%;
@@ -46,6 +47,7 @@
 }
 
 #dejarPartida{
+    font-family:Arial, Helvetica, sans-serif; 
     margin-top: 5%;
     left:40%;
     width:110%;
