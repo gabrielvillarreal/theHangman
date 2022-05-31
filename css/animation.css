@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#333, rgb(121, 121, 121));
+}
+
+#moon{
+    position:absolute;
+    top:5%;
+    right:50%;
+    right:calc(50% - 170px);
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:#CCC;
+    box-shadow:0px 0px 100px #FFFF8C;
+    z-index:5;
+    animation: moonAnimation 3s infinite;
+}
+
+ /*-----------------------------------*/
+ @keyframes moonAnimation {
+    0% { box-shadow: 0px 0px 100px #FFF; }
+    50% { box-shadow: 0px 0px 140px #FFF; }
+    100% { box-shadow: 0px 0px 100px #FFF; }
+
+}
+
+@-moz-keyframes moonAnimation {
+    0% {
+        box-shadow: 0px 0px 100px #FFF;
+    }
+    50% {
+        box-shadow: 0px 0px 140px #FFF;
+    }
+    100% {
+        box-shadow: 0px 0px 100px #FFF;
+    }
+
+}
+
+@-webkit-keyframes moonAnimation {
+    0% {
+        box-shadow: 0px 0px 100px #FFF;
+    }
+    50% {
+        box-shadow: 0px 0px 140px #FFF;
+    }
+    100% {
+        box-shadow: 0px 0px 100px #FFF;
+    }
+
+}
+
+/*creando crater y fase lunar*/
+#moonFase{
+    position:absolute;
+    top:5%;
+    right:50%;
+    right:calc(50% - 170px);
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background: rgba(153,153,153,0);
+    box-shadow: inset -25px 0px 0 0px #999;
+    z-index:6;
+    animation: moonFaseAnimation 150s infinite;
+}
+
+.crater{
+    position:absolute;
+    background:#555;
+    box-shadow: inset 3px -2px 0 0px #414043;
+    z-index:7;
+}
+
+.crater1{
+    top:30px;
+    left:70px;
+    width:25px;
+    height:45px;
+    border-top-right-radius:50px 100px;
+    border-top-left-radius:50px 100px;
+    border-bottom-right-radius:50px 100px;
+    border-bottom-left-radius:50px 100px;
+    transform:rotate(40deg);
+}
+.crater2{
+    top:200px;
+    right:53px;
+    width:15px;
+    height:20px;
+    border-top-right-radius:20px 20px;
+    border-top-left-radius:20px 20px;
+    border-bottom-right-radius:20px 30px;
+    border-bottom-left-radius:20px 30px;
+    -webkit-transform:rotate(-60deg);
+    -moz-transform:rotate(-60deg);
+    transform:rotate(-60deg);
+}
+
+.crater3{
+    top:180px;
+    left:95px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.crater4{
+    top:125px;
+    right:140px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.crater5{
+    top:50px;
+    left:190px;
+    width:35px;
+    height:50px;
+    border-radius:50%;
+    -webkit-transform:rotate(120deg);
+    -moz-transform:rotate(120deg);
+    transform:rotate(120deg);
+}
+
+.crater6{
+    bottom:50px;
+    left:120px;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+}
+
+.crater7{
+    bottom:30px;
+    left:180px;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+}
+.crater8{
+    bottom:130px;
+    left:30px;
+    width:10px;
+    height:15px;
+    border-radius:50%;
+}
+
+/* Estrellas pintadas al azahar*/
+.star {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.6);
+    position: absolute;
+}
+ /*-----------------------------------*/
+ @keyframes moonFaseAnimation {
+    0% {
+        box-shadow: inset -25px 0px 0 0px #999;
+        background: rgba(153,153,153,0); 
+    }
+    50% {
+        box-shadow: inset -200px 0px 0 0px #999;
+    }
+    51% {
+        background: rgba(153,153,153,1);
+    }
+    52% {
+        box-shadow: inset 200px 0px 0 0px #999;
+    }
+    53% {
+        background: rgba(153,153,153,0);
+    }
+    100% {
+        box-shadow: inset -25px 0px 0 0px #999;
+    }
+
+}
+
+@-moz-keyframes moonFaseAnimation {
+    0% {
+        box-shadow: inset -25px 0px 0 0px #999;
+        background: rgba(153,153,153,0); 
+    }
+    50% {
+        box-shadow: inset -200px 0px 0 0px #999;
+    }
+    51% {
+        background: rgba(153,153,153,1);
+    }
+    52% {
+        box-shadow: inset 200px 0px 0 0px #999;
+    }
+    53% {
+        background: rgba(153,153,153,0);
+    }
+    100% {
+        box-shadow: inset -25px 0px 0 0px #999;
+    }
+
+}
+
+@keyframes moonFaseAnimation {
+    0% {
+        box-shadow: inset -25px 0px 0 0px #999;
+        background: rgba(153,153,153,0); 
+    }
+    50% {
+        box-shadow: inset -200px 0px 0 0px #999;
+        /* background: rgba(153,153,153,0);*/
+    }
+    51% {
+        background: rgba(153,153,153,1);
+    }
+    52% {
+        box-shadow: inset 200px 0px 0 0px #999;
+    }
+    53% {
+        background: rgba(153,153,153,0);
+    }
+    100% {
+        box-shadow: inset -25px 0px 0 0px #999;
+    }
+
+}

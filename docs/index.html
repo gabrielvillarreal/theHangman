@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman</title>
+    <link rel="stylesheet" href="/css/animation.css"/>
+    <link rel="stylesheet" href="/css/estilos.css"/>
+    <link rel="stylesheet" href="/css/botones.css"/>
+    <link rel="stylesheet" href="/css/objetos.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Trade+Winds&display=swap" rel="stylesheet">
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <section id="titulo">
+        <h1>El juego del Ahorcado</h1>
+    </section>
+    <section>
+        <div id="moon"></div>
+        <div id="moonFase">
+            <div class="crater crater1"></div>
+                <div class="crater crater2"></div>
+                <div class="crater crater3"></div>
+                <div class="crater crater4"></div>
+                <div class="crater crater5"></div>
+                <div class="crater crater6"></div>
+                <div class="crater crater7"></div>
+                <div class="crater crater8"></div>
+        </div>
+    </section>
+    <section id="game-section" class="flex-col-center">
+        <div>
+            <div id="letrasUsadas"></div>
+        </div>
+        <div id="contenedorPalabra"></div>
+        <div id="right-words-box" class="flex-col-center"></div>
+        <div id="wrong-words-box" class="flex-col-center">&nbsp</div>
+    </section>
+    <section id="botonera" >
+        <button class="botones" name="iniciar partida" id="iniciarPartida">Iniciar Partida</button>
+        <button class="botones" id="btn-abrir-popup">Agregar Palabra</button>
+    </section>
+
+    <section id="botoneraJuego" hidden>
+        <button class="botones" name="Nueva Partida" id="nuevaPartida" >Nueva Partida</button>
+        <button class="botones" id="dejarPartida" >Desistir</button>
+    </section>
+
+    <section>
+        <image class="arbol" src="/img/arbol.png" alt="Arbol viejo con ramas secas"></image>
+        <image class="lapida" src="/img/lapida.png" alt="lapida donde se teclea la letra a adivinar"></image>
+        <image class="horca" id="horca" src="/img/horca0.png" alt="Se muestra una horca al comienzo del juego" ></image>
+         
+    </section>
+    <div id="globo" hidden>
+        <p id="cuervo" class="globo iii abajo-izquierda">
+            Hola!! Teclee una letra por favor, le diré si Ud acierta o no
+        </p>
+    </div>
+    
+    <div class="letraIngresada" hidden>
+        <input id="letra" type="text" name="letra" minlength="1" maxlength="1"  hidden>
+    </div>
+
+    <!--- Modal para agregar palabra -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>INGRESA LA PALABRA SECRETA</h3>
+            <h4>Se agregara automaticamente al listado de palabras secretas.</h4>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input id="palabraNueva" type="text" onkeypress="checkEntrada(event)" maxlength="8" placeholder="La palabra secreta no debe superar los 8 caracteres. ">
+                </div>
+                <input type="submit" id="btn-submit" class="btn-submit" value="Agregar">
+            </form>
+        </div>
+    </div><!-- /.overlay -->
+
+    <footer id="pieDePagina">        
+        <p class="nombre">
+            <span>Challenge Nº 2 - Oracle One - © Gabriel Villarreal 2022 </span> 
+        </p>
+        <a class="redes" href="https://www.linkedin.com/in/villarreal-gabriel/" target="blank"><i class="fab fa-linkedin"></i></a>
+        <a class="redes" href="https://github.com/gabrielvillarreal/" target="blank"><i class="fab fa-github"></i></a>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</body>
+<script src="/js/stars.js"></script>
+<script src="/js/botones.js"></script>
+<script src="/js/juego.js"></script>
+<script src="/js/popup.js"></script>
+
+</html>

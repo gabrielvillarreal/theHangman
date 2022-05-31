@@ -1,0 +1,66 @@
+.botones{
+    position:relative;
+    border-style: groove;
+    border-color: aqua;
+    background: rgba(0,0,0,0);
+    font-family: roboto;
+    font-size: 30px;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    margin:5%;
+    width:110%;
+}
+
+#botonera{
+    position:absolute;
+    margin-top: 5%;
+    left:40%;
+    width:20%;
+    z-index:99;    
+}
+
+.botones:hover{
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px 3px #00FFB6; ;
+    color: rgb(74, 73, 73);
+    transition: 0.5s;
+    z-index:99;
+}
+
+#nuevaPartida{   
+    margin-top: 5%;
+    left:40%;
+    width:110%;
+    z-index: 99;
+    justify-content: center;
+}
+
+#nuevaPartida:hover{
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px 3px #00FFB6; ;
+    color: rgb(74, 73, 73);
+    transition: 0.5s;
+    z-index:99;
+}
+
+#dejarPartida{
+    margin-top: 5%;
+    left:40%;
+    width:110%;
+    z-index:99;
+    justify-content: center; 
+}
+#dejarPartida:hover{
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px 3px #00FFB6; ;
+    color: rgb(74, 73, 73);
+    transition: 0.5s;
+    z-index:99;
+}
+#botoneraJuego{
+    position: absolute;
+    z-index:9999;
+    height: 35%;
+    left:65%;
+}
