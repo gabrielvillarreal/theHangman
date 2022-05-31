@@ -11,13 +11,13 @@ dejarPartida.addEventListener("click", function(){
     visibilidadObjeto("globo",false);
     visibilidadObjeto("titulo",true);
     visibilidadObjeto("letra",false);
-    document.getElementById("horca").src="/img/horca0.png";
+    document.getElementById("horca").src="../img/horca0.png";
     finalizarJuego();
 });
 
 nuevaPartida.addEventListener("click", function(){
     finalizarJuego();
-    document.getElementById("horca").src="/img/horca0.png";
+    document.getElementById("horca").src="../img/horca0.png";
     removerGuiones();
     empezarJuego();
     underscores = document.querySelectorAll(".underscore");
@@ -33,7 +33,7 @@ iniciarPartida.addEventListener("click", function () {
     visibilidadObjeto("titulo",false);
     visibilidadObjeto("letra",true);
     visibilidadObjeto("botoneraJuego",true);
-    document.getElementById("horca").src="/img/horca0.png";
+    document.getElementById("horca").src="../img/horca0.png";
     empezarJuego();
     underscores = document.querySelectorAll(".underscore");    
 });

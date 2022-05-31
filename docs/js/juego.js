@@ -96,7 +96,7 @@ function checkLetter(){
 }
 
 function dibujaAhorcado(score){
-    horca = document.getElementById("horca").src="/img/horca"+ score + ".png"; 
+    horca = document.getElementById("horca").src="../img/horca"+ score + ".png"; 
 }
 
 function gano(){
