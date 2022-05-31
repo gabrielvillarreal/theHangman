@@ -10,24 +10,33 @@ h1{
 }
 
 .arbol{
-    position:fixed;
-    bottom:0;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-repeat: no-repeat;
+    background-position:bottom bottom;
+    background-size: cover;
+    
     z-index:9;
     width:100%;
-    left:0;
+    
 }
 .lapida{
     position:absolute;
-    bottom:0;
+    bottom: 0px;
+    align-items: baseline;
     z-index:9;
-    height: 35%;
+    height: 25%;
     left:55%;
+    
 }
 .horca{
     position:absolute;
-    bottom:65px;
+    bottom:0px;
     z-index: 8;
-    left:25%;
+    left:24%;
+    height: 55%;
+    width: 30%;
 }
 canvas{
     position: absolute;
@@ -116,8 +125,8 @@ canvas{
 .globo.iii{
     position:absolute;
     width: 15%;
-    top: 58% ;
-    left: 63%;
+    top: 68% ;
+    left: 61%;
 }
 .globo::before{
 content: '';
