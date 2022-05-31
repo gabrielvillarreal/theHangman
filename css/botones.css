@@ -1,4 +1,5 @@
 .botones{
+    font-family:Arial, Helvetica, sans-serif; 
     position:relative;
     border-style: groove;
     border-color: aqua;
@@ -28,7 +29,8 @@
     z-index:99;
 }
 
-#nuevaPartida{   
+#nuevaPartida{ 
+    font-family:Arial, Helvetica, sans-serif;  
     margin-top: 5%;
     left:40%;
     width:110%;
@@ -45,6 +47,7 @@
 }
 
 #dejarPartida{
+    font-family:Arial, Helvetica, sans-serif; 
     margin-top: 5%;
     left:40%;
     width:110%;
