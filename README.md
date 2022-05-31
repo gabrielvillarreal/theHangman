@@ -25,7 +25,7 @@
 
 ## Authors
 
-- [@Gabriel Villarreal](https://gabrielvillarreal.github.io/)
+- [@Gabriel Villarreal](https://github.com/gabrielvillarreal)
 
 
 ## Demo
