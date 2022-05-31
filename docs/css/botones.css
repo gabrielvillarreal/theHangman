@@ -12,7 +12,12 @@
     margin:5%;
     width:110%;
 }
-
+#iniciarPartida{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn-abrir-popup{
+    font-family: Arial, Helvetica, sans-serif;
+}
 #botonera{
     position:absolute;
     margin-top: 5%;
